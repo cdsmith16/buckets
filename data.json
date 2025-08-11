@@ -21,19 +21,15 @@
     { "name": "Kyrie Irving", "team": "DAL", "age": 34, "years": 13, "war": 4.5, "per": 23.2, "vorp": 3.2, "salary": 38000000, "remaining": 76000000 },
     { "name": "Karl-Anthony Towns", "team": "MIN", "age": 30, "years": 10, "war": 4.7, "per": 23.9, "vorp": 3.4, "salary": 36000000, "remaining": 108000000 },
     { "name": "Devin Booker", "team": "PHX", "age": 29, "years": 9, "war": 5.2, "per": 24.4, "vorp": 3.8, "salary": 36200000, "remaining": 144000000 }
-
-    /* Add 30 more NBA players here in the same format */
   ],
   "college": [
     { "name": "Zach Edey", "school": "Purdue", "age": 22, "years": 4, "war": 3.2, "per": 28.4, "vorp": 2.1, "nil": 250000 },
     { "name": "Armando Bacot", "school": "UNC", "age": 23, "years": 5, "war": 2.8, "per": 26.0, "vorp": 1.8, "nil": 200000 },
     { "name": "Caleb Love", "school": "Arizona", "age": 22, "years": 4, "war": 2.5, "per": 24.5, "vorp": 1.5, "nil": 180000 }
-    /* Add 27 more college players */
   ],
   "nil": [
     { "name": "Bronny James", "sport": "Basketball", "school": "USC", "age": 20, "years": 1, "nil": 5900000, "sponsor": "Nike" },
     { "name": "Livvy Dunne", "sport": "Gymnastics", "school": "LSU", "age": 21, "years": 3, "nil": 3200000, "sponsor": "Vuori" },
     { "name": "Arch Manning", "sport": "Football", "school": "Texas", "age": 21, "years": 1, "nil": 2800000, "sponsor": "Panini" }
-    /* Add 17 more NIL athletes */
   ]
 }
