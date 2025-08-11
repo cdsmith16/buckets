@@ -1,26 +1,39 @@
 {
   "nba": [
-    { "name": "LeBron James", "team": "LAL", "age": 39, "years": 21, "war": 8.5, "per": 23.1, "vorp": 5.8, "salary": 47300000, "remaining": 23650000 },
-    { "name": "Stephen Curry", "team": "GSW", "age": 36, "years": 15, "war": 7.8, "per": 25.4, "vorp": 6.1, "salary": 51800000, "remaining": 25800000 },
-    { "name": "Giannis Antetokounmpo", "team": "MIL", "age": 30, "years": 11, "war": 9.1, "per": 29.4, "vorp": 6.5, "salary": 45650000, "remaining": 22825000 },
-    { "name": "Nikola Jokic", "team": "DEN", "age": 30, "years": 10, "war": 10.2, "per": 31.1, "vorp": 7.4, "salary": 47600000, "remaining": 23800000 },
-    { "name": "Luka Doncic", "team": "DAL", "age": 26, "years": 7, "war": 8.9, "per": 27.8, "vorp": 6.9, "salary": 40500000, "remaining": 20250000 },
-    { "name": "Jayson Tatum", "team": "BOS", "age": 27, "years": 8, "war": 8.1, "per": 24.3, "vorp": 5.6, "salary": 32600000, "remaining": 16300000 },
-    { "name": "Kevin Durant", "team": "PHX", "age": 37, "years": 18, "war": 7.4, "per": 25.0, "vorp": 5.3, "salary": 47650000, "remaining": 23825000 },
-    { "name": "Jimmy Butler", "team": "MIA", "age": 35, "years": 14, "war": 6.2, "per": 22.5, "vorp": 4.4, "salary": 45200000, "remaining": 22600000 },
-    { "name": "Anthony Edwards", "team": "MIN", "age": 23, "years": 4, "war": 6.9, "per": 22.8, "vorp": 4.8, "salary": 13600000, "remaining": 6800000 },
-    { "name": "Shai Gilgeous-Alexander", "team": "OKC", "age": 27, "years": 7, "war": 8.0, "per": 24.6, "vorp": 5.9, "salary": 33200000, "remaining": 16600000 }
+    { "name": "LeBron James", "team": "LAL", "age": 39, "years": 21, "war": 6.5, "per": 23.4, "vorp": 4.1, "salary": 47100000, "remaining": 23500000 },
+    { "name": "Stephen Curry", "team": "GSW", "age": 36, "years": 15, "war": 5.8, "per": 25.1, "vorp": 3.8, "salary": 51900000, "remaining": 103800000 },
+    { "name": "Kevin Durant", "team": "PHX", "age": 36, "years": 16, "war": 5.6, "per": 24.3, "vorp": 3.6, "salary": 47600000, "remaining": 95600000 },
+    { "name": "Giannis Antetokounmpo", "team": "MIL", "age": 30, "years": 11, "war": 7.1, "per": 29.8, "vorp": 5.0, "salary": 45600000, "remaining": 124000000 },
+    { "name": "Nikola Jokic", "team": "DEN", "age": 30, "years": 10, "war": 8.3, "per": 31.2, "vorp": 6.3, "salary": 47800000, "remaining": 144000000 },
+    { "name": "Luka Doncic", "team": "DAL", "age": 26, "years": 7, "war": 7.4, "per": 29.1, "vorp": 5.8, "salary": 40600000, "remaining": 130000000 },
+    { "name": "Jayson Tatum", "team": "BOS", "age": 27, "years": 8, "war": 6.0, "per": 25.5, "vorp": 4.3, "salary": 32600000, "remaining": 108000000 },
+    { "name": "Anthony Edwards", "team": "MIN", "age": 24, "years": 5, "war": 5.3, "per": 22.6, "vorp": 3.7, "salary": 13000000, "remaining": 200000000 },
+    { "name": "Damian Lillard", "team": "MIL", "age": 35, "years": 13, "war": 4.8, "per": 22.1, "vorp": 3.0, "salary": 45100000, "remaining": 137000000 },
+    { "name": "Jimmy Butler", "team": "MIA", "age": 35, "years": 14, "war": 4.9, "per": 21.8, "vorp": 3.1, "salary": 45200000, "remaining": 45200000 },
+
+    { "name": "Kawhi Leonard", "team": "LAC", "age": 34, "years": 12, "war": 4.6, "per": 24.0, "vorp": 3.4, "salary": 45600000, "remaining": 91200000 },
+    { "name": "Paul George", "team": "LAC", "age": 35, "years": 14, "war": 4.3, "per": 21.7, "vorp": 2.9, "salary": 45400000, "remaining": 90800000 },
+    { "name": "Shai Gilgeous-Alexander", "team": "OKC", "age": 27, "years": 7, "war": 6.9, "per": 26.0, "vorp": 4.8, "salary": 33300000, "remaining": 66000000 },
+    { "name": "Donovan Mitchell", "team": "CLE", "age": 29, "years": 8, "war": 5.4, "per": 23.0, "vorp": 3.9, "salary": 32000000, "remaining": 64000000 },
+    { "name": "Joel Embiid", "team": "PHI", "age": 31, "years": 9, "war": 7.5, "per": 30.0, "vorp": 5.4, "salary": 47800000, "remaining": 143000000 },
+    { "name": "Zion Williamson", "team": "NOP", "age": 25, "years": 5, "war": 4.1, "per": 25.8, "vorp": 2.7, "salary": 34000000, "remaining": 102000000 },
+    { "name": "Ja Morant", "team": "MEM", "age": 26, "years": 6, "war": 4.4, "per": 23.5, "vorp": 2.9, "salary": 33000000, "remaining": 99000000 },
+    { "name": "Kyrie Irving", "team": "DAL", "age": 34, "years": 13, "war": 4.5, "per": 23.2, "vorp": 3.2, "salary": 38000000, "remaining": 76000000 },
+    { "name": "Karl-Anthony Towns", "team": "MIN", "age": 30, "years": 10, "war": 4.7, "per": 23.9, "vorp": 3.4, "salary": 36000000, "remaining": 108000000 },
+    { "name": "Devin Booker", "team": "PHX", "age": 29, "years": 9, "war": 5.2, "per": 24.4, "vorp": 3.8, "salary": 36200000, "remaining": 144000000 }
+
+    /* Add 30 more NBA players here in the same format */
   ],
   "college": [
-    { "name": "Zach Edey", "school": "Purdue", "age": 22, "years": 4, "war": 5.6, "per": 30.1, "vorp": 3.2, "nil": 750000 },
-    { "name": "Caleb Love", "school": "Arizona", "age": 21, "years": 3, "war": 4.4, "per": 23.5, "vorp": 2.4, "nil": 620000 },
-    { "name": "Hunter Dickinson", "school": "Kansas", "age": 22, "years": 4, "war": 4.9, "per": 25.7, "vorp": 2.7, "nil": 520000 },
-    { "name": "Kyle Filipowski", "school": "Duke", "age": 20, "years": 2, "war": 4.1, "per": 22.8, "vorp": 2.2, "nil": 480000 },
-    { "name": "DJ Wagner", "school": "Kentucky", "age": 19, "years": 1, "war": 3.6, "per": 20.3, "vorp": 1.8, "nil": 450000 }
+    { "name": "Zach Edey", "school": "Purdue", "age": 22, "years": 4, "war": 3.2, "per": 28.4, "vorp": 2.1, "nil": 250000 },
+    { "name": "Armando Bacot", "school": "UNC", "age": 23, "years": 5, "war": 2.8, "per": 26.0, "vorp": 1.8, "nil": 200000 },
+    { "name": "Caleb Love", "school": "Arizona", "age": 22, "years": 4, "war": 2.5, "per": 24.5, "vorp": 1.5, "nil": 180000 }
+    /* Add 27 more college players */
   ],
   "nil": [
-    { "name": "Bronny James", "sport": "Basketball", "school": "USC", "age": 19, "years": 1, "nil": 5800000, "sponsor": "Nike" },
-    { "name": "Arch Manning", "sport": "Football", "school": "Texas", "age": 20, "years": 2, "nil": 2700000, "sponsor": "Panini" },
-    { "name": "Livvy Dunne", "sport": "Gymnastics", "school": "LSU", "age": 21, "years": 3, "nil": 3300000, "sponsor": "Vuori" }
+    { "name": "Bronny James", "sport": "Basketball", "school": "USC", "age": 20, "years": 1, "nil": 5900000, "sponsor": "Nike" },
+    { "name": "Livvy Dunne", "sport": "Gymnastics", "school": "LSU", "age": 21, "years": 3, "nil": 3200000, "sponsor": "Vuori" },
+    { "name": "Arch Manning", "sport": "Football", "school": "Texas", "age": 21, "years": 1, "nil": 2800000, "sponsor": "Panini" }
+    /* Add 17 more NIL athletes */
   ]
 }
