@@ -70,7 +70,7 @@ tbody tr:nth-child(even) {
 /* --- BBRef-inspired header --- */
 table.dataTable thead th {
   background-color: #000;
-  color: #ff4500; /* matches nav active color */
+  color: #ffb89e; /* softer version of nav active color */
   font-weight: bold;
   text-align: center;
   border-bottom: 2px solid #ff4500;
