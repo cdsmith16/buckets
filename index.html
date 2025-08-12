@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buckets — Player Value vs Earnings</title>
   <link rel="stylesheet" href="style.css">
+
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   <!-- jQuery -->
@@ -16,16 +17,16 @@
   <header>
     <h1>Buckets</h1>
     <nav>
-      <a href="#" data-section="nba" class="active">NBA</a>
-      <a href="#" data-section="college">College</a>
-      <a href="#" data-section="nil">NIL</a>
+      <a href="#" id="nav-nba" class="active">NBA</a>
+      <a href="#" id="nav-college">College</a>
+      <a href="#" id="nav-nil">NIL</a>
     </nav>
   </header>
 
   <!-- NBA Section -->
   <section id="section-nba" class="content-section active">
     <h2>NBA Player Value vs Earnings</h2>
-    <table>
+    <table id="nbaTable" class="display">
       <thead>
         <tr>
           <th>Name</th><th>Team</th><th>Age</th><th>Years</th>
@@ -40,7 +41,7 @@
   <!-- College Section -->
   <section id="section-college" class="content-section">
     <h2>College Player Value vs NIL</h2>
-    <table>
+    <table id="collegeTable" class="display">
       <thead>
         <tr>
           <th>Name</th><th>School</th><th>Age</th><th>Years</th>
@@ -55,7 +56,7 @@
   <!-- NIL Section -->
   <section id="section-nil" class="content-section">
     <h2>Top NIL Athletes</h2>
-    <table>
+    <table id="nilTable" class="display">
       <thead>
         <tr>
           <th>Name</th><th>Sport</th><th>School</th>
@@ -68,19 +69,9 @@
 
   <!-- Ad placeholder -->
   <div class="ad-container">
-    <!-- Replace with your Google AdSense code -->
     <div class="ad-placeholder">Ad space</div>
   </div>
 
   <script src="app.js"></script>
-  <script>
-    document.querySelectorAll("nav a").forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const section = link.getAttribute("data-section");
-        showSection(section);
-      });
-    });
-  </script>
 </body>
 </html>
