@@ -114,8 +114,10 @@ function renderTable(section) {
         paging: true,
         searching: true,
         responsive: true,
-        order: []
+        order: [],
+        stateSave: true // 🔹 remembers sort, search, page between reloads
     });
+
 
     // Update active section visuals
     document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
