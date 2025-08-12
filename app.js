@@ -21,17 +21,31 @@ function renderTable(section) {
     };
 
     const tableSelector = tableMap[section];
-    const tableBody = document.querySelector(`${tableSelector} tbody`);
+    const table = document.querySelector(tableSelector);
 
     // Destroy previous DataTable instance if exists
     if ($.fn.DataTable.isDataTable(tableSelector)) {
         $(tableSelector).DataTable().destroy();
     }
 
-    let rowsHTML = '';
+    let theadHTML = '';
+    let tbodyHTML = '';
 
     if (section === 'nba') {
-        rowsHTML = jsonData.nba.map(player => `
+        theadHTML = `
+            <tr>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Age</th>
+                <th>Years</th>
+                <th>WAR</th>
+                <th>PER</th>
+                <th>VORP</th>
+                <th>Salary</th>
+                <th>Remaining</th>
+            </tr>
+        `;
+        tbodyHTML = jsonData.nba.map(player => `
             <tr>
                 <td>${player.name}</td>
                 <td>${player.team}</td>
@@ -44,8 +58,21 @@ function renderTable(section) {
                 <td>$${player.remaining.toLocaleString()}</td>
             </tr>
         `).join('');
-    } else if (section === 'college') {
-        rowsHTML = jsonData.college.map(player => `
+    } 
+    else if (section === 'college') {
+        theadHTML = `
+            <tr>
+                <th>Name</th>
+                <th>School</th>
+                <th>Age</th>
+                <th>Years</th>
+                <th>WAR</th>
+                <th>PER</th>
+                <th>VORP</th>
+                <th>NIL Value</th>
+            </tr>
+        `;
+        tbodyHTML = jsonData.college.map(player => `
             <tr>
                 <td>${player.name}</td>
                 <td>${player.school}</td>
@@ -57,8 +84,20 @@ function renderTable(section) {
                 <td>$${player.nil.toLocaleString()}</td>
             </tr>
         `).join('');
-    } else if (section === 'nil') {
-        rowsHTML = jsonData.nil.map(player => `
+    } 
+    else if (section === 'nil') {
+        theadHTML = `
+            <tr>
+                <th>Name</th>
+                <th>Sport</th>
+                <th>School</th>
+                <th>Age</th>
+                <th>Years</th>
+                <th>NIL Value</th>
+                <th>Sponsor</th>
+            </tr>
+        `;
+        tbodyHTML = jsonData.nil.map(player => `
             <tr>
                 <td>${player.name}</td>
                 <td>${player.sport}</td>
@@ -71,8 +110,9 @@ function renderTable(section) {
         `).join('');
     }
 
-    // Insert rows
-    tableBody.innerHTML = rowsHTML;
+    // Update table head & body
+    table.querySelector('thead').innerHTML = theadHTML;
+    table.querySelector('tbody').innerHTML = tbodyHTML;
 
     // Init DataTables
     $(tableSelector).DataTable({
