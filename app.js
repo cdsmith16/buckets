@@ -1,26 +1,33 @@
 let jsonData = {};
 let currentSection = 'nba';
-let dataTable; // Reference to DataTables instance
 
-// Fetch JSON data and initialize
+// Load JSON and initialize
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
         jsonData = data;
-        renderTable(currentSection);
+        renderTable('nba');
     })
     .catch(err => console.error('Error loading JSON:', err));
 
 function renderTable(section) {
     currentSection = section;
-    const tableBody = document.querySelector('#statsTable tbody');
 
-    // Destroy DataTable if already initialized
-    if (dataTable) {
-        dataTable.destroy();
+    // Section → Table ID
+    const tableMap = {
+        nba: '#nbaTable',
+        college: '#collegeTable',
+        nil: '#nilTable'
+    };
+
+    const tableSelector = tableMap[section];
+    const tableBody = document.querySelector(`${tableSelector} tbody`);
+
+    // Destroy previous DataTable instance if exists
+    if ($.fn.DataTable.isDataTable(tableSelector)) {
+        $(tableSelector).DataTable().destroy();
     }
 
-    // Build table rows based on section
     let rowsHTML = '';
 
     if (section === 'nba') {
@@ -64,18 +71,26 @@ function renderTable(section) {
         `).join('');
     }
 
-    // Replace table body
+    // Insert rows
     tableBody.innerHTML = rowsHTML;
 
-    // Reinitialize DataTables
-    dataTable = new DataTable('#statsTable', {
+    // Init DataTables
+    $(tableSelector).DataTable({
+        paging: true,
+        searching: true,
         responsive: true,
-        pageLength: 10,
-        order: [], // No default sort
+        order: []
     });
+
+    // Toggle active section visually
+    document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+    document.querySelector(`#section-${section}`).classList.add('active');
+
+    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+    document.querySelector(`#nav-${section}`).classList.add('active');
 }
 
-// Navigation button listeners
-document.getElementById('nav-nba').addEventListener('click', () => renderTable('nba'));
-document.getElementById('nav-college').addEventListener('click', () => renderTable('college'));
-document.getElementById('nav-nil').addEventListener('click', () => renderTable('nil'));
+// Navigation events
+document.getElementById('nav-nba').addEventListener('click', e => { e.preventDefault(); renderTable('nba'); });
+document.getElementById('nav-college').addEventListener('click', e => { e.preventDefault(); renderTable('college'); });
+document.getElementById('nav-nil').addEventListener('click', e => { e.preventDefault(); renderTable('nil'); });
