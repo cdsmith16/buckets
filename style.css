@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a.active {
-  background: #ff4500; /* bright orange active */
+  background: #ff4500;
   border-radius: 4px;
 }
 
@@ -43,73 +43,9 @@ nav a.active {
   display: block;
 }
 
+/* --- Table Base --- */
 table {
   border-collapse: collapse;
   width: 100%;
   background: white;
-}
-
-th, td {
-  text-align: left;
-  padding: 0.6em;
-  border-bottom: 1px solid #ddd;
-}
-
-th {
-  background: #222;
-  color: white;
-}
-
-tr:hover {
-  background: #f1f1f1;
-}
-
-.ad-container {
-  text-align: center;
-  margin: 1.5em 0;
-}
-
-.ad-placeholder {
-  background: #ccc;
-  padding: 1.5em;
-  font-size: 1.2em;
-  color: #555;
-}
-
-/* Responsive mobile table style */
-@media (max-width: 768px) {
-  table, thead, tbody, th, td, tr {
-    display: block;
-  }
-
-  thead tr {
-    display: none;
-  }
-
-  tr {
-    margin-bottom: 1em;
-    background: white;
-    border-radius: 6px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
-    padding: 0.6em;
-  }
-
-  td {
-    border: none;
-    padding: 0.4em 0;
-    position: relative;
-  }
-
-  td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.3em;
-    color: #666;
-  }
-}
-
-/* --- BBRef-inspired DataTable look --- */
-table.dataTable {
-  border-collapse: collapse;
-  font-size: 13px; /
+  bo
