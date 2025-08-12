@@ -55,7 +55,11 @@ th, td {
   text-align: left;
   padding: 0.6em;
   border-bottom: 1px solid #ddd;
-  font-size: 0.95rem;
+}
+
+tr:hover {
+  background: #f1f1f1;
+  transition: background 0.2s ease-in-out;
 }
 
 /* --- Alternating row colors --- */
@@ -85,17 +89,6 @@ table.dataTable thead th:first-child {
   position: sticky;
   left: 0;
   z-index: 2;
-}
-
-/* --- Row hover with subtle orange tint --- */
-table.dataTable tbody tr:hover {
-  background-color: rgba(255, 69, 0, 0.08); /* soft orange highlight */
-  transition: background 0.2s ease-in-out;
-}
-
-/* --- Ensure hover applies to frozen first column too --- */
-table.dataTable tbody tr:hover td:first-child {
-  background-color: rgba(255, 69, 0, 0.12); /* slightly darker for contrast */
 }
 
 /* --- Mobile: Horizontal scroll --- */
