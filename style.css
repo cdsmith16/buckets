@@ -55,11 +55,7 @@ th, td {
   text-align: left;
   padding: 0.6em;
   border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-  background: #f1f1f1;
-  transition: background 0.2s ease-in-out;
+  font-size: 0.95rem;
 }
 
 /* --- Alternating row colors --- */
@@ -72,31 +68,4 @@ table.dataTable thead th {
   background-color: #000;
   color: #ff4500; /* matches nav active color */
   font-weight: bold;
-  text-align: center;
-  border-bottom: 2px solid #ff4500;
-  white-space: nowrap;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-}
-
-/* --- Freeze first column --- */
-table.dataTable tbody td:first-child,
-table.dataTable thead th:first-child {
-  background-color: #f9f9f9;
-  color: #000;
-  font-weight: bold;
-  position: sticky;
-  left: 0;
-  z-index: 2;
-}
-
-/* --- Mobile: Horizontal scroll --- */
-@media (max-width: 768px) {
-  .dataTables_wrapper {
-    overflow-x: auto;
-  }
-  table.dataTable {
-    min-width: 600px;
-  }
-}
+  te
