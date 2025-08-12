@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a.active {
-  background: #ff4500;
+  background: #ff4500; /* bright orange active */
   border-radius: 4px;
 }
 
@@ -109,45 +109,7 @@ tr:hover {
   }
 }
 
-/* Overall table look */
+/* --- BBRef-inspired DataTable look --- */
 table.dataTable {
   border-collapse: collapse;
-  font-size: 13px; /* smaller font like BBRef */
-  width: 100%;
-}
-
-/* Header styling */
-table.dataTable thead th {
-  background-color: #e0e0e0; /* light gray like BBRef */
-  font-weight: bold;
-  padding: 6px 8px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-/* Body cell styling */
-table.dataTable tbody td {
-  padding: 4px 8px;
-  border: 1px solid #ccc;
-}
-
-/* Align numbers right */
-table.dataTable td:nth-child(3),
-table.dataTable td:nth-child(4),
-table.dataTable td:nth-child(5),
-table.dataTable td:nth-child(6),
-table.dataTable td:nth-child(7),
-table.dataTable td:nth-child(8),
-table.dataTable td:nth-child(9) {
-  text-align: right;
-}
-
-/* Zebra striping */
-table.dataTable tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-/* Hover highlight */
-table.dataTable tbody tr:hover {
-  background-color: #ffffcc; /* pale yellow */
-}
+  font-size: 13px; /
